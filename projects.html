@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kita-desu ka!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #f3dbe0;
+            line-height: 1.6;
+            padding: 2rem;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            color: #ffb7c5;
+            margin-bottom: 1rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background-color: #ffb7c5;
+            color: #121212;
+            text-decoration: none;
+            border-radius: 999px;
+            font-weight: 600;
+            transition: transform 0.25s, background-color 0.25s;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.05);
+            background-color: #ffc9d7;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .project-card {
+            background-color: rgba(42, 42, 42, 0.85);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: #ffb7c5;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            color: #e6cbd1;
+            margin-bottom: 1.2rem;
+        }
+
+        .project-card a {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background-color: #ffb7c5;
+            color: #121212;
+            text-decoration: none;
+            border-radius: 999px;
+            font-weight: 600;
+            transition: background-color 0.25s, transform 0.25s;
+        }
+
+        .project-card a:hover {
+            transform: scale(1.05);
+            background-color: #ffc9d7;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.1rem;
+            }
+            .project-card h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #f5ccd5;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .petal {
+            position: fixed;
+            top: -10px;
+            width: 20px;
+            height: 20px;
+            background: url('https://cdn-icons-png.flaticon.com/512/774/774832.png') no-repeat center/contain;
+            opacity: 0.8;
+            animation: fall linear infinite;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateX(0) translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(100px) translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My GitHub Projects</h1>
+            <a href="index.html" class="back-btn">Back to Bio</a>
+        </header>
+        <main class="projects-grid">
+            <div class="project-card">
+                <h2>Tsukika</h2>
+                <p>Tsukika, a work-in-progress custom firmware solution for Samsung devices.</p>
+                <a href="https://github.com/ikuyo-kita07/Tsukika" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>Hoshiko</h2>
+                <p>Hoshiko, an application designed to block ads in specific Android apps. It acts as a user interface add-on for Re-Malwack</p>
+                <a href="https://github.com/ikuyo-kita07/Hoshiko" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>Bash-Installer</h2>
+                <p>Bash-Installer, a simple installer with multi-language support.</p>
+                <a href="https://github.com/ikuyo-kita07/Bash-Installer" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>XOR</h2>
+                <p>XOR, a simple command-line utility for encoding, decoding, and verifying strings and files using a custom 64-bit hash mechanism.</p>
+                <a href="https://github.com/ikuyo-kita07/XOR" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>Minari</h2>
+                <p>Minari, an open-source tool designed to help you create and manage custom wallpapers.</p>
+                <a href="https://github.com/ikuyo-kita07/Minari" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>Methylish</h2>
+                <p>Methylish, a simple command interpreter made from scratch fully in C.</p>
+                <a href="https://github.com/ikuyo-kita07/Methylish" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>PatchRecoveryRevived</h2>
+                <p>The only working recovery patcher tool that lives to patch Samsung's recovery images to enable fastbootd mode.</p>
+                <a href="https://github.com/ikuyo-kita07/PatchRecoveryRevived" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>TerminalSierra</h2>
+                <p>A small Kotlin written app for basic shell access.</p>
+                <a href="https://github.com/ikuyo-kita07/TerminalSierra" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>Kaguya</h2>
+                <p>A small repository which aims to write the CLI utilities using C.</p>
+                <a href="https://github.com/ikuyo-kita07/Kaguya" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>Re-Malwack-Nebula</h2>
+                <p>A fully-fledged ad-block module, fork of ZG089's Re-Malwack</p>
+                <a href="https://github.com/ikuyo-kita07/Re-Malwack-Nebula" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>Re-Malwack</h2>
+                <p>A fully-fledged ad-block module.</p>
+                <a href="https://github.com/ZG089/Re-Malwack" target="_blank">View on GitHub</a>
+            </div>
+        </main>
+        <div class="footer">
+            <p>"When the time is right, I, the Lord, will make it happen." — Isaiah 60:22</p>
+        </div>
+    </div>
+    <script>
+        const numPetals = 35;
+        for(let i = 0; i < numPetals; i++) {
+            const petal = document.createElement('div');
+            petal.classList.add('petal');
+            petal.style.left = Math.random() * 100 + 'vw';
+            const size = 15 + Math.random() * 15;
+            petal.style.width = size + 'px';
+            petal.style.height = size + 'px';
+            petal.style.animationDuration = 5 + Math.random() * 5 + 's';
+            petal.style.top = -Math.random() * window.innerHeight + 'px';
+            document.body.appendChild(petal);
+        }
+    </script>
+</body>
+</html>
