@@ -214,16 +214,17 @@
         </div>
     </div>
     <script>
-        const numPetals = 25;
+        const numPetals = 35;
         for(let i = 0; i < numPetals; i++) {
             const petal = document.createElement('div');
             petal.classList.add('petal');
-            const size = 10 + Math.random() * 15;
+            petal.style.left = Math.random() * 100 + 'vw';
+            const size = 15 + Math.random() * 15;
             petal.style.width = size + 'px';
             petal.style.height = size + 'px';
-            petal.style.left = Math.random() * 100 + 'vw';
-            petal.style.animationDuration = 6 + Math.random() * 7 + 's';
-            petal.style.animationDelay = Math.random() * 5 + 's';
+            petal.style.animationDuration = 5 + Math.random() * 5 + 's';
+            petal.style.animationDelay = '0s';
+            petal.style.top = -Math.random() * window.innerHeight + 'px';
             document.body.appendChild(petal);
         }
     </script>
