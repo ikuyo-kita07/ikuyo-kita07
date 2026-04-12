@@ -8,7 +8,7 @@ I am a 17-year-old developer focused on Android and low-level systems. I’ve be
 </p>
 
 * **Focus:** Mobile Development & OS Internals
-* **Status:** Preparing for final high school exams
+* **Status:** Doing some part-time j*bs.
 * **Philosophy:** Isaiah 60:22 — *"When the time is right, I, the Lord, will make it happen."*
 
 <br clear="left"/>
@@ -17,24 +17,18 @@ I am a 17-year-old developer focused on Android and low-level systems. I’ve be
 
 ## **Github Stats**
 <p align="center">
-  <img src="https://github-readme-stats-denvercoder1.vercel.app/api?username=ikuyo-kita07&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight" alt="Bocchi's GitHub stats" />
+  <img src="https://github-readme-stats-denvercoder1.vercel.app/api?username=ikuyo-kita07&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight" alt="Kita's GitHub stats" />
 </p>
 
 ## **Tech Stack**
 
 | Category | Technologies |
 | :--- | :--- |
-| **Languages** | `Kotlin`, `C`, `Bash`, `Java` |
+| **Languages** | `Kotlin`, `C`, `Bash` |
 | **OS Expertise** | `Android` (Root/ROMs), `GNU/Linux`, `macOS`, `Windows`, `KaiOS` |
-| **Fields** | Reverse Engineering, Automation, Mobile Dev |
 
 ---
 
 ## **Contact**
 
 **Discord Community:** [Join Server](https://discord.gg/E6DbYWj3PS)
-
-```c
-#include <stdio.h>
-int main() { puts("Handle: ikuyo-kita07\n"); puts("Status: Focused on Finals\n"); return -1; }
-```
